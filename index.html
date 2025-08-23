@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Todd Moussallem | Front End Developer</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ****** Header ****** -->
+
+      <header>
+        <nav>
+          <h2>toddmoussallem</h2>
+          <section class="social-media">
+            <a href=""
+              ><img src="./assets/images/icon-github.svg" alt="Github"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icon-twitter.svg" alt="X"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/images/icon-frontend-mentor.svg"
+                alt="Frontend Mentor"
+            /></a>
+          </section>
+        </nav>
+        <section class="image-bio">
+          <img
+            src="./assets/images/white-shirt-arms-crossed.jpeg"
+            alt="Picture of Todd"
+          />
+          <section class="top-section">
+            <h1>
+              Nice to meet you! <br />
+              I'm <span id="name">Todd Moussallem</span>.
+            </h1>
+            <p>
+              Based in the US, I'm a front-end developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <span>Contact Me</span>
+          </section>
+        </section>
+        <img src="./assets/images/pattern-circle.svg" alt="circle" />
+        <img src="./assets/images/pattern-rings.svg" alt="rings" />
+      </header>
+      <!-- ****** Main ****** -->
+      <main>
+        <section class="skills-section">
+          <div class="skill-grouping-1">
+            <section>
+              <h2 class="skills">HTML</h2>
+              <span>4 Years Experience</span>
+            </section>
+            <section>
+              <h2 class="skills">CSS</h2>
+              <span>4 Years Experience</span>
+            </section>
+          </div>
+          <div class="skill-grouping-2">
+            <section>
+              <h2 class="skills">JavaScript</h2>
+              <span>4 Years Experience</span>
+            </section>
+            <section>
+              <h2 class="skills">Accessiblity</h2>
+              <span>4 Years Experience</span>
+            </section>
+          </div>
+          <img
+            src="./assets/images/pattern-rings.svg"
+            alt="rings"
+            id="rings-2"
+          />
+        </section>
+
+        <!-- ****** Projects ****** -->
+        <section class="projects">
+          <section id="projects-heading">
+            <h2>Projects</h2>
+            <h3>Contact Me</h3>
+          </section>
+
+          <div class="project-grouping-1">
+            <section id="project-1">
+              <img
+                src="./assets/images/e-learning-website-small.webp"
+                alt="e-learning-website"
+              />
+              <h4>E-Learning Website</h4>
+              <div class="languages">
+                <aside>HTML</aside>
+                <aside>CSS</aside>
+              </div>
+              <div class="links">
+                <a href="https://rtoddm.github.io/e_learning_page/"
+                  ><aside>View Project</aside></a
+                >
+                <a href="https://github.com/rtoddm/e_learning_page"
+                  ><aside>View Code</aside></a
+                >
+              </div>
+            </section>
+
+            <section id="project-2">
+              <img
+                src="./assets/images/time-tracking-dashboard-preview.jpg"
+                alt="e-learning-website"
+              />
+              <h4>Time Tracking Dashboard</h4>
+              <div class="languages">
+                <aside>HTML</aside>
+                <aside>CSS</aside>
+                <aside>JS</aside>
+              </div>
+              <div class="links">
+                <a href="https://rtoddm.github.io/time_tracking_dashboard/"
+                  ><aside>View Project</aside></a
+                >
+                <a href="https://github.com/rtoddm/time_tracking_dashboard"
+                  ><aside>View Code</aside></a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="project-grouping-2">
+            <section id="project-3">
+              <img
+                src="./assets/images/newsletter-signup-fullscreen.png"
+                alt="newsletter-signup-page"
+              />
+              <h4>Newsletter Signup Page</h4>
+              <div class="languages">
+                <aside>HTML</aside>
+                <aside>CSS</aside>
+                <aside>JS</aside>
+              </div>
+              <div class="links">
+                <a href="https://rtoddm.github.io/newsletter_signup_form/"
+                  ><aside>View Project</aside></a
+                >
+                <a href="https://github.com/rtoddm/newsletter_signup_form"
+                  ><aside>View Code</aside></a
+                >
+              </div>
+            </section>
+
+            <section id="project-4">
+              <img
+                src="./assets/images/salon-webpage.png"
+                alt="salon-website"
+              />
+              <h4>Salon Website</h4>
+              <div class="languages">
+                <aside>HTML</aside>
+                <aside>CSS</aside>
+              </div>
+              <div class="links">
+                <a href="https://salonwebsite-layout.netlify.app/"
+                  ><aside>View Project</aside></a
+                >
+                <a href="https://github.com/rtoddm/salon-website"
+                  ><aside>View Code</aside></a
+                >
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- ****** Contact ******  -->
+        <section class="contact">
+          <section class="contact-bio">
+            <h2>Contact</h2>
+            <p>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I'll get back to you as soon as
+              possible.
+            </p>
+          </section>
+          <section class="form">
+            <form class="contact-form" action="submit">
+              <label for="name" id="contact-name">Name</label>
+              <input type="text" id="name-input" name="name" required /><br />
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required /><br />
+
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+            <img
+              src="./assets/images/pattern-rings.svg"
+              alt="rings"
+              id="bottom-rings"
+            />
+          </section>
+          <footer class="footer">
+            <h2>toddmoussallem</h2>
+            <section class="social-media-2">
+              <a href=""
+                ><img src="./assets/images/icon-github.svg" alt="Github"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/icon-twitter.svg" alt="X"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/images/icon-frontend-mentor.svg"
+                  alt="Frontend Mentor"
+              /></a>
+            </section>
+          </footer>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
