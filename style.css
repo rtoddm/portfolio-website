@@ -51,7 +51,7 @@ body {
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 body {
@@ -85,17 +85,18 @@ nav {
 }
 
 .social-media {
-  width: 200px;
-  margin-bottom: 10px;
+  width: 12.5rem;
+  margin-bottom: 0.625rem;
 }
 
 img[alt="Github"],
 img[alt="LinkedIn"],
 img[alt="X"],
 img[alt="Frontend Mentor"] {
-  height: 1.2rem;
-  padding: 0 10px 0 10px;
-  margin-left: 5px;
+  height: 1.4rem;
+  width: 2.5rem;
+  padding: 0 0.625rem;
+  margin-left: 0.3125rem;
 }
 
 img[alt="Picture of Todd"] {
@@ -108,17 +109,17 @@ img[alt="circle"] {
   width: 8rem;
   height: 7rem;
   position: absolute;
-  top: 14.7rem;
-  left: 21.5rem;
+  top: 35%;
+  left: 87%;
   z-index: 0;
 }
 
 img[alt="rings"] {
-  width: 530px;
-  height: 120px;
+  width: 33.125rem;
+  height: 7.5rem;
   position: absolute;
   top: 8rem;
-  right: 155px;
+  right: 9.6875rem;
   mix-blend-mode: normal;
   opacity: 1.25;
   z-index: -1;
@@ -130,7 +131,7 @@ img[alt="rings"] {
   align-items: center;
 }
 
-/* ****** Main ****** */
+/* ****** MAIN ****** */
 main {
   display: flex;
   flex-direction: column;
@@ -142,12 +143,12 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 5.3125rem;
 }
 
 .top-section h1 {
   font-size: 2.2rem;
-  padding: 0 4px 0 4px;
+  padding: 0 0.25rem;
 }
 
 #name {
@@ -159,7 +160,7 @@ main {
   font-family: var(--font-family);
   font-size: var(--fs-sm);
   color: var(--color-light-gray);
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 
 .top-section p + span {
@@ -168,7 +169,14 @@ main {
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: var(--color-green);
-  text-underline-offset: 15px;
+  text-underline-offset: 0.9375rem;
+}
+
+.br-mobile {
+  display: inline;
+}
+.br-tablet {
+  display: none;
 }
 
 .skills-section,
@@ -178,22 +186,22 @@ main {
   align-items: center;
   text-align: center;
   width: 95%;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .skills-section {
-  width: 345px;
-  border-top: var(--color-light-gray) 2px solid;
-  border-bottom: var(--color-light-gray) 2px solid;
+  width: 21.5625rem;
+  border-top: var(--color-light-gray) 0.125rem solid;
+  border-bottom: var(--color-light-gray) 0.125rem solid;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 
 .skills {
   font-family: var(--font-family);
   font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 2.5rem;
+  margin-bottom: 0.625rem;
 }
 
 .skills-section span {
@@ -202,11 +210,11 @@ main {
 }
 
 #rings-2 {
-  width: 530px;
-  height: 120px;
+  width: 33.125rem;
+  height: 7.5rem;
   position: absolute;
   top: 24.5rem;
-  left: 195px;
+  left: 12.1875rem;
   mix-blend-mode: normal;
   opacity: 1.25;
   z-index: -2;
@@ -221,25 +229,25 @@ main {
 
 #projects-heading h2,
 #projects-heading h3 {
-  width: 152px;
-  height: 40px;
+  width: 9.5rem;
+  height: 2.5rem;
 }
 
 #projects-heading h2 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -1.13636px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.071rem;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 #projects-heading h3 {
   text-decoration: underline;
   text-decoration-color: var(--color-green);
-  text-underline-offset: 15px;
+  text-underline-offset: 0.9375rem;
   text-transform: uppercase;
 }
 
@@ -261,7 +269,7 @@ main {
 #project-2 img,
 #project-3 img,
 #project-4 img {
-  display: block; /* remove inline-gap */
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -274,11 +282,11 @@ main {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #ffffff;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .languages,
@@ -291,12 +299,12 @@ main {
 }
 
 .languages aside {
-  padding-right: 25px;
+  padding-right: 1.5625rem;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   color: #d9d9d9;
 }
 
@@ -304,50 +312,41 @@ main {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: #ffffff;
   text-transform: uppercase;
-  padding-right: 20px;
+  padding-right: 1.25rem;
   text-decoration: underline;
   text-decoration-color: var(--color-green);
-  text-underline-offset: 15px;
-  letter-spacing: 2.28571px;
+  text-underline-offset: 0.9375rem;
+  letter-spacing: 0.143rem;
 }
 
 .contact {
   background-color: var(--color-light-black);
   width: 100%;
-  left: 0px;
-  top: 4179px;
+  left: 0;
+  top: 261.19rem;
   padding-bottom: 0;
 }
 
 .contact h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   text-align: center;
-  letter-spacing: -1.13636px;
+  letter-spacing: -0.071rem;
   color: #ffffff;
-}
-
-.contact p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #d9d9d9;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
-  width: 343px;
-  left: 16px;
-  top: 4427px;
+  width: 21.4375rem;
+  left: 1rem;
+  top: 276.69rem;
 }
 
 .form {
@@ -355,48 +354,48 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .contact input {
-  width: 343px;
-  height: 43px;
-  left: 16px;
-  top: 4427px;
+  width: 21.4375rem;
+  height: 2.6875rem;
+  left: 1rem;
+  top: 276.69rem;
 }
 
 .contact textarea {
-  width: 343px;
-  height: 107px;
-  left: 16px;
-  top: 4577px;
+  width: 21.4375rem;
+  height: 6.6875rem;
+  left: 1rem;
+  top: 286.06rem;
 }
 
 .contact button {
   align-self: flex-end;
-  width: 144px;
-  height: 38px;
-  left: 215px;
-  top: 4716px;
+  width: 9rem;
+  height: 2.375rem;
+  left: 13.4375rem;
+  top: 294.75rem;
 }
 
 .contact p {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-align: center;
   color: #d9d9d9;
-  width: 343px;
-  margin-left: 18px;
+  width: 21.4375rem;
+  margin-left: 1.125rem;
 }
 
 #bottom-rings {
   position: absolute;
-  width: 530px;
-  height: 120px;
+  width: 33.125rem;
+  height: 7.5rem;
   top: 19.5rem;
-  right: 280px;
+  right: 17.5rem;
   mix-blend-mode: normal;
   opacity: 1.25;
   z-index: 2;
@@ -410,23 +409,25 @@ main {
 }
 
 .footer h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .social-media-2 {
-  width: 200px;
-}
+  width: 12.5rem;
+} /* END MOBILE STYLES */
 
-/* ****** Tablets ****** */
-@media (min-width: 600px) and (max-width: 1024px) {
+/****************************************************
+ ******************* TABLET STYLES *****************
+ ****************************************************/
+@media (min-width: 768px) {
   .container {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 
   nav {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding: 0 1.875rem;
   }
 
   .image-bio {
@@ -434,15 +435,16 @@ main {
   }
 
   img[alt="Picture of Todd"] {
-    width: 20.12rem;
-    height: 37.5rem;
+    width: 27.12rem;
+    height: 35.5rem;
     order: 1;
     z-index: 1;
+    margin-left: -7.0625rem;
   }
 
   .top-section {
     z-index: 2;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .top-section h1,
@@ -452,19 +454,27 @@ main {
   }
 
   .top-section h1 {
-    width: 75%;
-    font-size: 60px;
-    margin-top: 50px;
+    width: 95%;
+    font-size: 3.75rem;
+    margin-top: 3.125rem;
   }
 
   .top-section p + span {
     align-self: flex-start;
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 3.4375rem;
+    margin-left: 0.9375rem;
+    font-size: 1rem;
   }
 
   .top-section p {
-    width: 500px;
+    width: 31.25rem;
+  }
+
+  .br-mobile {
+    display: none;
+  }
+  .br-tablet {
+    display: inline;
   }
 
   img[alt="circle"] {
@@ -473,7 +483,7 @@ main {
 
   img[alt="rings"] {
     top: 4rem;
-    right: 615px;
+    right: 38.4375rem;
     mix-blend-mode: normal;
     opacity: 1.25;
     z-index: -1;
@@ -481,9 +491,9 @@ main {
 
   .skills-section {
     align-items: flex-start;
-    width: 90%;
-    margin-top: 45px;
-    margin-bottom: 75px;
+    width: 95%;
+    margin-top: 2.8125rem;
+    margin-bottom: 4.6875rem;
     border-bottom: none;
   }
 
@@ -492,7 +502,7 @@ main {
   }
 
   .skill-grouping-1 {
-    width: 80%;
+    width: 85%;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -505,17 +515,21 @@ main {
     justify-content: space-between;
     flex-direction: row;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
   }
 
   #rings-2 {
-    top: 230px;
-    right: 0px;
-    left: 600px;
+    top: 14.375rem;
+    right: 0;
+    left: 37.5rem;
   }
 
   .projects {
-    margin-top: 40px;
+    margin-top: 2.5rem;
+  }
+
+  #projects-heading h2 {
+    font-size: 3.75rem;
   }
 
   .project-grouping-1,
@@ -527,27 +541,32 @@ main {
 
   #project-1,
   #project-3 {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 
   #project-2,
   #project-4 {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 
   .contact-bio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
+  }
+
+  .contact-bio h2 {
+    font-size: 3.75rem;
   }
 
   .contact p {
-    width: 445px;
+    font-size: 1.12rem;
+    width: 27.8125rem;
   }
 
   .contact button {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   .footer {
@@ -555,10 +574,115 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
+  }
+
+  .footer h2 {
+    font-size: 2rem;
   }
 
   #bottom-rings {
-    right: 650px;
+    right: 40.625rem;
+  }
+} /* END TABLET STYLES */
+
+/****************************************************
+ ******************* DESKTOP STYLES *****************
+ ****************************************************/
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 165px 0 165px;
+  }
+
+  header {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  img[alt="rings"] {
+    top: 8rem;
+    right: 45rem;
+    opacity: 0.8;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  img[alt="Picture of Todd"] {
+    width: 27.12rem;
+    height: 35.5rem;
+    order: 1;
+    z-index: 1;
+    margin-left: 0;
+  }
+
+  .top-section {
+    margin-right: 15px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .projects {
+    height: 1300px;
+    margin-bottom: 50px;
+  }
+
+  #project-1,
+  #project-2,
+  #project-3,
+  #project-4 {
+    max-width: 100%;
+  }
+
+  .project-grouping-2 {
+    margin-top: 120px;
+  }
+
+  #project-4 {
+    height: 344px;
+    margin-top: 75px;
+  }
+
+  #rings-2 {
+    top: 15.375rem;
+    right: 0;
+    left: 60.5rem;
+    opacity: 0.8;
+  }
+
+  .contact {
+    width: 100vw;
+  }
+
+  .contact-top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+
+  .contact-bio {
+  }
+
+  #bottom-rings {
+    top: 14.5rem;
+    right: 61.5rem;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  .footer {
+    width: 90%;
+    margin-left: 75px;
+    border-top: var(--color-light-gray) solid 2px;
   }
 }

@@ -40,12 +40,17 @@
           />
           <section class="top-section">
             <h1>
-              Nice to meet you! <br />
-              I'm <span id="name">Todd Moussallem</span>.
+              Nice to <br class="br-tablet" />
+              meet you! <br class="br-mobile" />
+              I'm <br class="br-tablet" /><span id="name"
+                >Todd&nbsp;Moussallem</span
+              >.
             </h1>
             <p>
-              Based in the US, I'm a front-end developer passionate about
-              building accessible web apps that users love.
+              Based in the US, I'm a front-end developer
+              <br class="br-tablet" />
+              passionate about building accessible web apps
+              <br class="br-tablet" />that users love.
             </p>
             <span>Contact Me</span>
           </section>
@@ -179,37 +184,39 @@
 
         <!-- ****** Contact ******  -->
         <section class="contact">
-          <section class="contact-bio">
-            <h2>Contact</h2>
-            <p>
-              I would love to hear about your project and how I could help.
-              Please fill in the form, and I'll get back to you as soon as
-              possible.
-            </p>
-          </section>
-          <section class="form">
-            <form class="contact-form" action="submit">
-              <label for="name" id="contact-name">Name</label>
-              <input type="text" id="name-input" name="name" required /><br />
+          <section class="contact-top-section">
+            <section class="contact-bio">
+              <h2>Contact</h2>
+              <p>
+                I would love to hear about your project and how I could help.
+                Please fill in the form, and I'll get back to you as soon as
+                possible.
+              </p>
+            </section>
+            <section class="form">
+              <form class="contact-form" action="submit">
+                <label for="name" id="contact-name">Name</label>
+                <input type="text" id="name-input" name="name" required /><br />
 
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" required /><br />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required /><br />
 
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="8"
-                required
-              ></textarea>
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="8"
+                  required
+                ></textarea>
 
-              <button type="submit">Send Message</button>
-            </form>
-            <img
-              src="./assets/images/pattern-rings.svg"
-              alt="rings"
-              id="bottom-rings"
-            />
+                <button type="submit">Send Message</button>
+              </form>
+              <img
+                src="./assets/images/pattern-rings.svg"
+                alt="rings"
+                id="bottom-rings"
+              />
+            </section>
           </section>
           <footer class="footer">
             <h2>toddmoussallem</h2>
