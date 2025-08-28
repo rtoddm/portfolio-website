@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./newstyle.css" />
 
     <title>Todd Moussallem | Front End Developer</title>
   </head>
   <body>
     <div class="container">
       <!-- ****** Header ****** -->
-
       <header>
         <nav>
           <h2>toddmoussallem</h2>
           <section class="social-media">
             <a href=""
-              ><img src="./assets/images/icon-github.svg" alt="Github"
+              ><img
+                src="./assets/images/icon-github.svg"
+                alt="Github"
+                class="icon"
             /></a>
             <a href="#"
-              ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+              ><img
+                src="./assets/images/icon-linkedin.svg"
+                alt="LinkedIn"
+                class="icon"
             /></a>
             <a href="#"
-              ><img src="./assets/images/icon-twitter.svg" alt="X"
+              ><img src="./assets/images/icon-twitter.svg" alt="X" class="icon"
             /></a>
             <a href="#"
               ><img
                 src="./assets/images/icon-frontend-mentor.svg"
                 alt="Frontend Mentor"
+                class="icon"
             /></a>
           </section>
         </nav>
@@ -49,10 +56,10 @@
             <p>
               Based in the US, I'm a front-end developer
               <br class="br-tablet" />
-              passionate about building accessible web apps
-              <br class="br-tablet" />that users love.
+              passionate about building accessible web <br class="br-tablet" />
+              apps that users love.
             </p>
-            <span>Contact Me</span>
+            <a href="#contact" class="contact-link"><span>Contact Me</span></a>
           </section>
         </section>
         <img src="./assets/images/pattern-circle.svg" alt="circle" />
@@ -83,99 +90,106 @@
           </div>
           <img
             src="./assets/images/pattern-rings.svg"
-            alt="rings"
+            alt="rings2"
             id="rings-2"
           />
         </section>
-
         <!-- ****** Projects ****** -->
         <section class="projects">
-          <section id="projects-heading">
-            <h2>Projects</h2>
-            <h3>Contact Me</h3>
-          </section>
+          <div class="projects-heading">
+            <h2 class="projects-heading__title">Projects</h2>
+            <a href="#contact" class="projects-heading__link">Contact Me</a>
+          </div>
 
-          <div class="project-grouping-1">
-            <section id="project-1">
+          <div class="projects-group">
+            <!-- Project 1 -->
+            <section class="project">
               <img
                 src="./assets/images/e-learning-website-small.webp"
-                alt="e-learning-website"
+                alt="E-Learning Website preview"
+                class="project-image"
               />
-              <h4>E-Learning Website</h4>
-              <div class="languages">
-                <aside>HTML</aside>
-                <aside>CSS</aside>
+              <h4 class="project-title">E-Learning Website</h4>
+              <div class="project-languages">
+                <span>HTML</span>
+                <span>CSS</span>
               </div>
-              <div class="links">
+              <div class="project-links">
                 <a href="https://rtoddm.github.io/e_learning_page/"
-                  ><aside>View Project</aside></a
+                  ><span>View Project</span></a
                 >
                 <a href="https://github.com/rtoddm/e_learning_page"
-                  ><aside>View Code</aside></a
+                  ><span>View Code</span></a
                 >
               </div>
             </section>
 
-            <section id="project-2">
+            <!-- Project 2 -->
+            <section class="project">
               <img
                 src="./assets/images/time-tracking-dashboard-preview.jpg"
-                alt="e-learning-website"
+                alt="Time Tracking Dashboard preview"
+                class="project-image"
               />
-              <h4>Time Tracking Dashboard</h4>
-              <div class="languages">
-                <aside>HTML</aside>
-                <aside>CSS</aside>
-                <aside>JS</aside>
+              <h4 class="project-title">Time Tracking Dashboard</h4>
+              <div class="project-languages">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
               </div>
-              <div class="links">
+              <div class="project-links">
                 <a href="https://rtoddm.github.io/time_tracking_dashboard/"
-                  ><aside>View Project</aside></a
+                  ><span>View Project</span></a
                 >
                 <a href="https://github.com/rtoddm/time_tracking_dashboard"
-                  ><aside>View Code</aside></a
+                  ><span>View Code</span></a
                 >
               </div>
             </section>
           </div>
 
-          <div class="project-grouping-2">
-            <section id="project-3">
+          <div class="projects-group">
+            <!-- Project 3 -->
+            <section class="project">
               <img
                 src="./assets/images/newsletter-signup-fullscreen.png"
-                alt="newsletter-signup-page"
+                alt="Newsletter Signup Page preview"
+                class="project-image"
               />
-              <h4>Newsletter Signup Page</h4>
-              <div class="languages">
-                <aside>HTML</aside>
-                <aside>CSS</aside>
-                <aside>JS</aside>
+              <h4 class="project-title">Newsletter Signup Page</h4>
+              <div class="project-languages">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
               </div>
-              <div class="links">
+              <div class="project-links">
                 <a href="https://rtoddm.github.io/newsletter_signup_form/"
-                  ><aside>View Project</aside></a
+                  ><span>View Project</span></a
                 >
                 <a href="https://github.com/rtoddm/newsletter_signup_form"
-                  ><aside>View Code</aside></a
+                  ><span>View Code</span></a
                 >
               </div>
             </section>
 
-            <section id="project-4">
+            <!-- Project 4 -->
+            <section class="project">
               <img
                 src="./assets/images/salon-webpage.png"
-                alt="salon-website"
+                alt="Salon Website preview"
+                class="project-image"
               />
-              <h4>Salon Website</h4>
-              <div class="languages">
-                <aside>HTML</aside>
-                <aside>CSS</aside>
+              <h4 class="project-title">Salon Website</h4>
+              <div class="project-languages">
+                <span>HTML</span>
+                <span>CSS</span>
               </div>
-              <div class="links">
+              <div class="project-links">
                 <a href="https://salonwebsite-layout.netlify.app/"
-                  ><aside>View Project</aside></a
+                  ><span>View Project</span></a
                 >
                 <a href="https://github.com/rtoddm/salon-website"
-                  ><aside>View Code</aside></a
+                  ><span>View Code</span></a
                 >
               </div>
             </section>
@@ -183,7 +197,7 @@
         </section>
 
         <!-- ****** Contact ******  -->
-        <section class="contact">
+        <section class="contact" id="contact">
           <section class="contact-top-section">
             <section class="contact-bio">
               <h2>Contact</h2>
