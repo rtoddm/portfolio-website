@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="./normalize.css" />
     <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <link rel="stylesheet" href="./newstyle.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Todd Moussallem | Front End Developer</title>
   </head>
@@ -17,22 +17,37 @@
         <nav>
           <h2>toddmoussallem</h2>
           <section class="social-media">
-            <a href=""
+            <a
+              href="https://github.com/rtoddm"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img
                 src="./assets/images/icon-github.svg"
                 alt="Github"
                 class="icon"
             /></a>
-            <a href="#"
+            <a
+              href="https://www.linkedin.com/in/todd-m-1a7aa8215/"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img
                 src="./assets/images/icon-linkedin.svg"
                 alt="LinkedIn"
                 class="icon"
             /></a>
-            <a href="#"
-              ><img src="./assets/images/icon-twitter.svg" alt="X" class="icon"
+            <a
+              href="https://www.codewars.com/users/rtoddm"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./assets/images/icon-codewars.svg"
+                alt="Codewars"
+                class="icon"
             /></a>
-            <a href="#"
+            <a
+              href="https://www.frontendmentor.io/profile/rtoddm"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img
                 src="./assets/images/icon-frontend-mentor.svg"
                 alt="Frontend Mentor"
@@ -46,11 +61,14 @@
             alt="Picture of Todd"
           />
           <section class="top-section">
-            <h1>
-              Nice to <br class="br-tablet" />
-              meet you! <br class="br-mobile" />
-              I'm <span id="name">Todd&nbsp;Moussallem</span>.
+            <h1 class="hero-title">
+              <span class="l1">Nice to</span>
+              <span class="l2"
+                >meet you! <span class="only-mobile"><br /></span>I’m</span
+              >
+              <span class="l3"><span id="name">Todd Moussallem</span>.</span>
             </h1>
+
             <p class="intro-text">
               Based in the UK, I’m a front-end developer<br />
               passionate about building accessible web&nbsp;
@@ -178,7 +196,9 @@
                 alt="Salon Website preview"
                 class="project-image salon-image"
               />
-              <h4 class="project-title">Salon Website</h4>
+              <h4 class="project-title">
+                Salon Website <span id="disclaimer">(Desktop Only)</span>
+              </h4>
               <div class="project-languages">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -207,23 +227,68 @@
               </p>
             </section>
             <section class="form">
-              <form class="contact-form" action="submit">
-                <label for="name" id="contact-name">Name</label>
-                <input type="text" id="name-input" name="name" required /><br />
+              <form
+                class="contact-form"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you"
+              >
+                <!-- Required hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="contact" />
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required /><br />
+                <!-- Honeypot field -->
+                <p style="display: none">
+                  <label
+                    >Don’t fill this out if you’re human:
+                    <input name="bot-field"
+                  /></label>
+                </p>
 
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="8"
+                <label for="name-input" class="contact-label">Name</label><br />
+                <input
+                  type="text"
+                  id="name-input"
+                  class="contact-input"
+                  name="name"
+                  minlength="5"
+                  maxlength="50"
                   required
-                ></textarea>
+                /><br />
 
-                <button type="submit">Send Message</button>
+                <label for="email-input" class="contact-label">Email</label
+                ><br />
+                <input
+                  type="email"
+                  id="email-input"
+                  class="contact-input"
+                  name="email"
+                  required
+                /><br />
+                <label for="message-input" class="contact-label">Message</label
+                ><br />
+                <textarea
+                  id="message-input"
+                  class="contact-textarea"
+                  name="message"
+                  rows="6"
+                  minlength="10"
+                  maxlength="500"
+                  required
+                ></textarea
+                ><br />
+
+                <!-- Netlify reCAPTCHA widget -->
+                <div
+                  data-netlify-recaptcha="true"
+                  class="contact-recaptcha"
+                ></div>
+                <br />
+
+                <button type="submit" class="contact-button">Send</button>
               </form>
+
               <img
                 src="./assets/images/pattern-rings.svg"
                 alt="rings"
@@ -234,19 +299,41 @@
           <footer class="footer">
             <h2>toddmoussallem</h2>
             <section class="social-media-2">
-              <a href=""
-                ><img src="./assets/images/icon-github.svg" alt="Github"
+              <a
+                href="https://github.com/rtoddm"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./assets/images/icon-github.svg"
+                  alt="Github"
+                  class="icon"
               /></a>
-              <a href="#"
-                ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+              <a
+                href="https://www.linkedin.com/in/todd-m-1a7aa8215/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./assets/images/icon-linkedin.svg"
+                  alt="LinkedIn"
+                  class="icon"
               /></a>
-              <a href="#"
-                ><img src="./assets/images/icon-twitter.svg" alt="X"
+              <a
+                href="https://www.codewars.com/users/rtoddm"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./assets/images/icon-codewars.svg"
+                  alt="Codewars"
+                  class="icon"
               /></a>
-              <a href="#"
+              <a
+                href="https://www.frontendmentor.io/profile/rtoddm"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   src="./assets/images/icon-frontend-mentor.svg"
                   alt="Frontend Mentor"
+                  class="icon"
               /></a>
             </section>
           </footer>

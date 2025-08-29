@@ -116,6 +116,10 @@ nav {
   margin-block-end: 0.6rem;
 }
 
+.social-media svg {
+  fill: #ffffff;
+}
+
 .icon {
   height: 1.4rem;
   width: 100%;
@@ -214,6 +218,10 @@ a:visited {
 }
 .br-tablet {
   display: none;
+}
+
+.im-guard {
+  display: inline;
 }
 
 .skills-section,
@@ -318,6 +326,10 @@ a:visited {
   color: var(--color-white);
   text-align: left;
   margin-block-end: 0.6rem;
+}
+
+#disclaimer {
+  font-size: var(--fs-sm);
 }
 
 .project-languages {
@@ -459,6 +471,25 @@ a:visited {
     display: none;
   }
 
+  .hero-title .l1,
+  .hero-title .l2,
+  .hero-title .l3 {
+    display: block;
+  }
+
+  /* Keep "meet you I’m" on one line, no orphaning */
+  .hero-title .l2 {
+    white-space: nowrap;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  #name {
+    white-space: nowrap;
+  }
+
   nav {
     width: 100%;
     flex-direction: row;
@@ -490,7 +521,7 @@ a:visited {
     align-items: flex-start;
     flex: 1;
     min-width: 0;
-    max-width: 55ch;
+    max-width: 58ch;
     padding-left: 1rem;
   }
 
@@ -501,12 +532,13 @@ a:visited {
   }
 
   .top-section h1 {
-    width: 95%;
+    width: 100%;
     font-size: clamp(2.5rem, 5vw, 3.75rem);
     line-height: 1.1;
     margin-block-start: 3.125rem;
     line-height: 1.1;
     font-weight: 700;
+    text-wrap: balance;
   }
 
   .top-section p + span {
@@ -575,8 +607,8 @@ a:visited {
     margin-block-start: 1.5625rem;
   }
 
-  .rings-2 {
-    display: none;
+  #rings-2 {
+    top: 16.5rem;
   }
 
   .projects {
@@ -596,6 +628,13 @@ a:visited {
 
   .project {
     max-width: 95%;
+  }
+
+  .project-title {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
   }
 
   .project:nth-child(1),
@@ -643,10 +682,6 @@ a:visited {
 
   .footer h2 {
     font-size: 2rem;
-  }
-
-  .bottom-rings {
-    right: 40.625rem;
   }
 }
 
@@ -719,7 +754,7 @@ a:visited {
   #rings-2 {
     top: 15.375rem;
     right: 0;
-    left: 60.5rem;
+    left: 50.5rem;
     opacity: 0.8;
   }
 
@@ -731,8 +766,8 @@ a:visited {
   }
 
   #bottom-rings {
-    top: 14.5rem;
-    right: 61.5rem;
+    top: 17.5rem;
+    right: 41.5rem;
   }
 
   .form {
@@ -746,6 +781,6 @@ a:visited {
   }
 
   #bottom-rings {
-    left: -65rem;
+    left: -55rem;
   }
 }
