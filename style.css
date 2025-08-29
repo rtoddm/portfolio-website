@@ -83,7 +83,6 @@ body {
 }
 
 .container {
-  outline: green solid 3px;
   box-sizing: content-box;
   max-width: var(--mobile-container-max);
   margin-inline: auto;
@@ -284,7 +283,7 @@ a:visited {
 .projects-group {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem; /* spacing between projects */
+  gap: 2.5rem;
   margin-block: 2rem;
   width: 100%;
   align-items: center;
@@ -450,7 +449,6 @@ a:visited {
 @media (min-width: 768px) {
   .container {
     max-width: var(--tablet-container-max);
-    outline: yellow solid 3px;
   }
 
   header {
@@ -480,8 +478,6 @@ a:visited {
 
   img[alt="Picture of Todd"] {
     width: 100%;
-    /* max-width: 27rem;
-    height: 35.5rem; */
     max-width: 50%;
     height: auto;
     order: 1;
@@ -494,7 +490,6 @@ a:visited {
     align-items: flex-start;
     flex: 1;
     min-width: 0;
-    /* max-width: 65ch; */
     max-width: 55ch;
     padding-left: 1rem;
   }
@@ -525,8 +520,8 @@ a:visited {
     line-height: var(--lh-base);
     font-weight: 500;
     color: var(--color-light-gray);
-    max-width: 45ch; /* allow enough width before wrapping */
-    white-space: normal; /* make sure text can reflow */
+    max-width: 45ch;
+    white-space: normal;
     text-align: left;
   }
 
@@ -660,7 +655,6 @@ a:visited {
  ****************************************************/
 @media only screen and (min-width: 1200px) {
   .container {
-    outline: red solid 3px;
     box-sizing: border-box;
     max-width: var(--desktop-container-max);
   }
@@ -693,7 +687,7 @@ a:visited {
   }
 
   .top-section p {
-    max-width: 45ch; /* same as tablet */
+    max-width: 45ch;
     white-space: normal;
     text-align: left;
   }
