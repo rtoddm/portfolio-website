@@ -307,16 +307,30 @@ a:visited {
   min-height: 24.8rem;
 }
 
+/* Uniform thumbnails for all project cards */
 .project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* consistent height across the grid */
+  object-fit: cover; /* crop to fill the box */
+  object-position: center;
+  border-radius: 0.25rem;
+}
+
+/* .project-image {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
-}
+} */
 
-.salon-image {
+/* .salon-image {
   height: 15rem;
-}
+} */
+
+/* .retreat-image {
+  height: 100%;
+} */
 
 .project-title {
   font-size: var(--fs-md);
